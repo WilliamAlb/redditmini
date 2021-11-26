@@ -11,7 +11,7 @@ export const Nav = styled.nav`
     position:fixed;
     top:0px;
     left:0px;
-    z-index:
+    z-index:999;
 `;
 export const Navlogo = styled.svg`
     color:${({theme})=>theme.detailColor};
