@@ -34,7 +34,6 @@ export const ContentTextDiv = styled.div`
     width:75%;
 `
 export const ContentTitle = styled.h2`
-    width:75%;
     font-size:2rem;
     font-weight:300;
     margin:10px 0px;
