@@ -1,4 +1,5 @@
 # Reddit Mini! [Live Site!](https://wills-reddit-mini.netlify.app/)
+![logo](https://i.imgur.com/5Eow8KM.png)
 ## Dashboard
 ![Dashboard](https://i.imgur.com/zPy3Esd.png)
 
