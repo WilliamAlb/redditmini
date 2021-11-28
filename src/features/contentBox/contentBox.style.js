@@ -45,7 +45,6 @@ export const ContentTitle = styled.h2`
     }
 `
 export const ContentAuthor = styled.h3`
-    width:75%;
     font-size:1rem;
     margin:10px 0px;
     color:${({theme})=>theme.textColor};
@@ -55,9 +54,10 @@ export const ContentAuthor = styled.h3`
     }
 `
 export const ContentText = styled.p`
-    width:75%;
     font-size:1rem;
     margin:10px 0px;
+    overflow:auto;
+    height:100px;
     color:${({theme})=>theme.textColor};
 
     @media only screen and (max-width:400px){
