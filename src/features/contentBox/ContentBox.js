@@ -1,13 +1,31 @@
+import { useRef } from "react";
+import { useEffect } from "react";
+
 import * as S from "./contentBox.style";
-import placeholder from '../../resources/img/placeholder.png'
+
 import { icons } from "../../resources/icons/icons";
+import placeholder from '../../resources/img/placeholder.png'
+
 export function ContentBox({data:{data}}){
 
     const {author,title,ups,url,selftext,is_video,media} = data;
-    console.log({author,title,ups,url,selftext,});
-    
+    const ref = useRef(null);
+
+    useEffect(()=>{
+        const observer = new IntersectionObserver(([entry])=>{
+            if(entry.isIntersecting){
+                ref.current.classList.add('on-screen');
+                observer.unobserve(ref.current);
+            }
+        },{threshold:0.4});
+
+        if(ref.current){
+            observer.observe(ref.current);
+        }
+    },[ref]);
+
     return(
-        <S.ContentBoxDiv>
+        <S.ContentBoxDiv ref={ref}>
             {
                 is_video?
                     <S.ContentVid controls>
