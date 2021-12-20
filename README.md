@@ -6,7 +6,7 @@
 ## Loading
 ![Loading](https://i.imgur.com/xpB5xdJ.png)
 
-[Wireframe](https://www.figma.com/file/IDRU1w150ziDL4EnzMbyOg/Reddit-Mini?node-id=0%3A1)is available here to witness the planning stage of the project.
+[Wireframe](https://www.figma.com/file/IDRU1w150ziDL4EnzMbyOg/Reddit-Mini?node-id=0%3A1) is available here to witness the planning stage of the project.
 
 [Live site](https://wills-reddit-mini.netlify.app/) is available here along with my portfolio with a reference to the site [here](https://wills-portfolio.netlify.app/).
 
