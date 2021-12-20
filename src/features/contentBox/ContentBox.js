@@ -32,8 +32,8 @@ export function ContentBox({data:{data}}){
                         <source src={media.reddit_video.fallback_url}></source>
                     </S.ContentVid>:
                     url.match(/\.(jpeg|jpg|gif|png)$/) != null?
-                        <S.ContentImg src={url} alt={title+' thumbnail'}/>:
-                        <S.ContentImg src={placeholder} alt={title+' thumbnail'}/>
+                        <S.ContentImg src={url} alt={title+' thumbnail'} loading="lazy"/>:
+                        <S.ContentImg src={placeholder} alt={title+' thumbnail'} loading="lazy"/>
                         }
             <S.ContentTextDiv>
                 <S.ContentTitle>{title}</S.ContentTitle>
